@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "Connect São Bento",
+    title: "Loja de Vendas Connect",
     description: "Frontend website para loja de uma comunidade cristã, com foco na venda de 3 blusas para festividade jovem. Projeto freelance completo com integração de API.",
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "API"],
     github: "https://github.com/DavidBen48/connect-sao-bento",
@@ -14,36 +14,35 @@ const projects = [
     status: "Concluído"
   },
   {
-    title: "Sistema de Gestão Financeira",
-    description: "Aplicação fullstack para controle financeiro pessoal com dashboard interativo, relatórios e análise de gastos. Backend em Java Spring Boot.",
-    technologies: ["React", "Java", "Spring Boot", "PostgreSQL", "Chart.js"],
+    title: "Cadastro de Clientes",
+    description: "Sistema completo para cadastro e gerenciamento de clientes utilizando Angular 16 no frontend e .NET 6 no backend com Web API, Entity Framework Core e SQL Server.",
+    technologies: ["Angular 16", ".NET 6", "Web API", "EF Core", "SQL Server"],
     github: "#",
     live: "#",
-    status: "Em desenvolvimento"
+    status: "Em Andamento"
   },
   {
-    title: "API de Análise de Dados",
-    description: "API RESTful para processamento e análise de grandes volumes de dados utilizando Python, Pandas e PySpark. Implementação de microserviços.",
-    technologies: ["Python", "Django", "Pandas", "PySpark", "Docker"],
+    title: "CRUD com Python - API em Django",
+    description: "API RESTful desenvolvida em Django com Python, utilizando Django Rest Framework e Corsheaders para operações CRUD completas.",
+    technologies: ["Python", "Django", "Rest Framework", "Corsheaders"],
     github: "#",
     live: "#",
-    status: "Planejado"
+    status: "Em Andamento"
   },
   {
-    title: "E-commerce Mobile",
-    description: "Aplicação mobile para e-commerce com carrinho de compras, pagamentos integrados e sistema de avaliações. Backend em C# .NET.",
-    technologies: ["React Native", "C#", ".NET", "MongoDB", "Stripe"],
+    title: "REST API com Go",
+    description: "API RESTful desenvolvida em Golang com PostgreSQL e Docker, focando em performance e arquitetura de microserviços.",
+    technologies: ["Golang", "PostgreSQL", "Docker"],
     github: "#",
     live: "#",
-    status: "Conceito"
+    status: "Arquitetando"
   }
 ]
 
 const statusColors = {
   "Concluído": "bg-primary text-primary-foreground",
-  "Em desenvolvimento": "bg-blue-500 text-white",
-  "Planejado": "bg-orange-500 text-white",
-  "Conceito": "bg-purple-500 text-white"
+  "Em Andamento": "bg-blue-500 text-white",
+  "Arquitetando": "bg-orange-500 text-white"
 }
 
 export function Projects() {
@@ -103,22 +102,34 @@ export function Projects() {
                   </div>
                   
                   <div className="flex gap-4">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1"
-                      asChild
-                    >
-                      <a 
-                        href={project.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2"
+                    {project.github !== "#" ? (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1"
+                        asChild
                       >
-                        <Github className="w-4 h-4" />
+                        <a 
+                          href={project.github} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-2"
+                        >
+                          <Github className="w-4 h-4" />
+                          Código
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex-1 opacity-50 cursor-not-allowed"
+                        disabled
+                      >
+                        <Github className="w-4 h-4 mr-2" />
                         Código
-                      </a>
-                    </Button>
+                      </Button>
+                    )}
                     
                     {project.live !== "#" && (
                       <Button 

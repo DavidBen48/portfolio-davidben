@@ -5,14 +5,17 @@ import { Code, Database, Settings, Cloud } from "lucide-react"
 
 const skillCategories = [
   {
-    title: "Linguagens & Frameworks",
+    title: "Linguagens",
     icon: Code,
     skills: [
-      "JavaScript", "TypeScript", "React", "NextJS", "TailwindCSS",
-      "Python", "Django", "Pandas", "PySpark",
-      "Java", "Spring Boot",
-      "C#", ".NET", "Entity Framework",
-      "Golang", "Ruby"
+      "Python", "Golang", "Java", "JS/TS"
+    ]
+  },
+  {
+    title: "Frameworks",
+    icon: Settings,
+    skills: [
+      "Django", "Pandas", "PySpark", "Gin", "Spring", "Reactjs", "Next.js"
     ]
   },
   {
@@ -26,16 +29,22 @@ const skillCategories = [
     title: "Arquitetura & Metodologias",
     icon: Settings,
     skills: [
-      "MVC", "API RESTful", "Microsserviços", "Clean Code", 
+      "MVC", "API RESTfull", "Microsserviços", "Clean Code", 
       "Design Patterns", "POO"
     ]
   },
   {
-    title: "Ferramentas & Cloud",
+    title: "Tools",
     icon: Cloud,
     skills: [
-      "Git", "GitHub", "Docker", "Google Cloud", "Azure Cloud",
-      "Scrum", "Kanban"
+      "Git", "GitHub", "PowerBI"
+    ]
+  },
+  {
+    title: "Contêiner & Cloud",
+    icon: Cloud,
+    skills: [
+      "Docker", "Google Cloud", "Azure Cloud"
     ]
   }
 ]
@@ -58,7 +67,7 @@ export function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}

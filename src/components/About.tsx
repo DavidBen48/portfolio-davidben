@@ -32,12 +32,12 @@ export function About() {
                 <h3 className="text-xl font-bold mb-4">Formação</h3>
                 <div className="space-y-3 text-muted-foreground">
                   <div>
-                    <p className="font-semibold text-foreground">Ciência da Computação</p>
+                    <p className="font-semibold text-foreground">Ciência da Computação (Ensino Superior)</p>
                     <p className="text-sm">Anhanguera Educacional</p>
                     <p className="text-sm">08/2025 – 01/2029</p>
                   </div>
                   <div className="pt-2 border-t border-border/40">
-                    <p className="font-semibold text-foreground">Desenvolvimento Fullstack</p>
+                    <p className="font-semibold text-foreground">Desenvolvimento Fullstack (Curso Técnico)</p>
                     <p className="text-sm">Recode (2024–2025)</p>
                   </div>
                 </div>

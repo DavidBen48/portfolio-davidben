@@ -64,8 +64,8 @@ export function Hero() {
           >
             Estudante de Ciência da Computação com experiência prática em desenvolvimento fullstack, 
             backend e análise de dados. Busco oportunidade como Desenvolvedor Fullstack Júnior, 
-            aplicando conhecimentos em Java, C#, Python, NextJS, APIs RESTful e bancos de dados 
-            SQL/NoSQL para desenvolver soluções escaláveis e de alta qualidade.
+            aplicando conhecimentos em Python e Golang (domino), Java e JavaScript (sei bem) e 
+            aprendendo C#/.NET, APIs RESTful e bancos de dados SQL/NoSQL para desenvolver soluções escaláveis e de alta qualidade.
           </motion.p>
 
           <motion.div
@@ -110,7 +110,9 @@ export function Hero() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a 
-              href="mailto:contato@davidben.dev" 
+              href="https://instagram.com/davidben_sax" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:bg-accent hover:border-primary transition-all duration-200 hover:shadow-glow"
             >
               <Mail className="w-6 h-6" />
