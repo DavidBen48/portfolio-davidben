@@ -12,20 +12,8 @@ export function Footer() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="mb-6">
-            <h3 className="text-2xl font-bold text-primary mb-2">David Ben</h3>
-            <p className="text-muted-foreground">Desenvolvedor Fullstack</p>
-          </div>
-          
-          <div className="flex items-center justify-center gap-2 text-muted-foreground">
-            <span>Feito com</span>
-            <Heart className="w-4 h-4 text-red-500 fill-current" />
-            <span>por David Ben • {new Date().getFullYear()}</span>
-          </div>
-          
-          <div className="mt-4 text-sm text-muted-foreground">
-            <p>Desenvolvido com React, TypeScript, Tailwind CSS e Framer Motion</p>
-          </div>
+          <h3 className="text-2xl font-bold text-primary mb-2">David Ben</h3>
+          <p className="text-muted-foreground">Fullstack Developer</p>
         </motion.div>
       </div>
     </footer>

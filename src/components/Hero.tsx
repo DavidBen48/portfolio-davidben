@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { Github, Linkedin, Instagram, MapPin, Phone, Mail } from "lucide-react"
 
 const roles = [
   "Desenvolvedor Fullstack",
@@ -77,13 +77,18 @@ export function Hero() {
             <Button 
               size="lg" 
               className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-glow"
+              asChild
             >
-              <Mail className="w-4 h-4 mr-2" />
-              Entre em Contato
+              <a href="#contact">
+                <Mail className="w-4 h-4 mr-2" />
+                Entre em Contato
+              </a>
             </Button>
             
-            <Button variant="outline" size="lg">
-              Ver Projetos
+            <Button variant="outline" size="lg" asChild>
+              <a href="#projects">
+                Ver Projetos
+              </a>
             </Button>
           </motion.div>
 
@@ -115,7 +120,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card border border-border hover:bg-accent hover:border-primary transition-all duration-200 hover:shadow-glow"
             >
-              <Mail className="w-6 h-6" />
+              <Instagram className="w-6 h-6" />
             </a>
           </motion.div>
         </div>
