@@ -7,8 +7,8 @@ const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    value: "contato@davidben.dev",
-    href: "mailto:contato@davidben.dev",
+    value: "davidbensaxofonista@gmail.com",
+    href: "mailto:davidbensaxofonista@gmail.com",
     description: "Melhor forma de entrar em contato"
   },
   {
@@ -123,7 +123,7 @@ export function Contact() {
                     className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-glow"
                     asChild
                   >
-                    <a href="mailto:contato@davidben.dev">
+                    <a href="mailto:davidbensaxofonista@gmail.com">
                       <Mail className="w-4 h-4 mr-2" />
                       Enviar Email
                     </a>

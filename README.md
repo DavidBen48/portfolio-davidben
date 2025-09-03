@@ -10,7 +10,7 @@
 
 **Portfolio pessoal moderno e responsivo desenvolvido com as mais recentes tecnologias web**
 
-[🔗 Demo](https://portfolio-daviben-dev.vercel.app) • [📧 Contato](mailto:davidben81@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/davidben81)
+[🔗 Demo](https://portfolio-daviben-dev.vercel.app) • [📧 Contato](mailto:davidbensaxofonista@gmail.com) • [💼 LinkedIn](https://linkedin.com/in/davidben81)
 
 </div>
 
@@ -228,7 +228,7 @@ bun run lint
 - **Aprendendo**: C#/.NET, APIs RESTful, SQL/NoSQL
 
 ### **Contato**
-- 📧 **Email**: davidben81@gmail.com
+- 📧 **Email**: davidbensaxofonista@gmail.com
 - 📱 **Telefone**: (21) 99480-8526
 - 💼 **LinkedIn**: [linkedin.com/in/davidben81](https://linkedin.com/in/davidben81)
 - 🐙 **GitHub**: [github.com/DavidBen48](https://github.com/DavidBen48)
